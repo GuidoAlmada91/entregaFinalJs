@@ -1,0 +1,77 @@
+h2 {
+    color: rgb(122, 123, 122);
+    font-family: "roboto";
+}
+
+h1 {
+    color: rgb(122, 123, 122);
+    font-family: "roboto";
+    font-weight: bold;
+    text-align: center;
+    background-color: #efefef;
+}
+
+#paises {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que las tarjetas se envuelvan a la siguiente fila */
+    justify-content: space-around;
+    /* Distribuye el espacio alrededor de las tarjetas */
+}
+
+body{
+    background-color: #a482ed;
+}
+.contenedorPaises {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    padding-bottom: 15px;
+    border: solid;
+    border-color: rgb(252, 212, 247);
+    margin-bottom: 20px;
+}
+
+img {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    /* Ajusta el relleno según sea necesario */
+    font-size: 16px;
+    font-family: "roboto";
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid rgb(252, 212, 247);
+    /* Color del borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    color: rgb(238, 243, 238);
+    /* Color del texto */
+    background-color: #a482ed;
+    /* Color de fondo */
+    transition: background-color 0.3s, color 0.3s;
+    /* Agrega transiciones suaves */
+}
+
+label.filtro{
+    color: #efefef;
+    font-family: "roboto";
+    font-weight: bold;
+    font-size: 25px;
+}
+select#filtroContinente{
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    color:  #a482ed;;
+}

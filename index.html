@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Api de Paises</h1>
+    <label class="filtro" for="filtroContinente">Continente: </label>
+    <select id="filtroContinente">
+        <option value="todos">Todos</option>
+        <option value="Africa">Africa</option>
+        <option value="Americas">América</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europa</option>
+        <option value="Oceania">Oceanía</option>
+    </select>
+
+    <div class="paises" id="paises">
+
+    </div>
+
+
+    <script type="module" src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
