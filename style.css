@@ -1,14 +1,52 @@
 h2 {
     color: rgb(122, 123, 122);
     font-family: "roboto";
+    
+    
 }
+
+h3{
+    color: #ffffff;
+    font-family: "roboto";
+    font-size: 25px;
+}
+
+input#buscador{
+    background-color: #ffffff;
+    margin-left: 15px;
+    color: #7bb4d4;
+    font-family: "roboto";
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+
+#buscador input{
+    color: #7bb4d4;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+input#buscador::placeholder {
+    color: #7bb4d4;
+    
+}
+
+.contenedorBuscador{
+    display: flex;
+    align-items: center;
+    
+}
+
 
 h1 {
     color: rgb(122, 123, 122);
     font-family: "roboto";
     font-weight: bold;
     text-align: center;
-    background-color: #efefef;
+    background-color: #ffffff;
 }
 
 #paises {
@@ -21,7 +59,7 @@ h1 {
 }
 
 body{
-    background-color: #a482ed;
+    background-color: #7bb4d4;
 }
 .contenedorPaises {
     width: 400px;
@@ -32,7 +70,7 @@ body{
     align-items: center;
     padding-bottom: 15px;
     border: solid;
-    border-color: rgb(252, 212, 247);
+    border-color: rgb(212, 221, 252);
     margin-bottom: 20px;
 }
 
@@ -45,33 +83,38 @@ img {
 button {
     display: inline-block;
     padding: 10px 20px;
-    /* Ajusta el relleno según sea necesario */
     font-size: 16px;
     font-family: "roboto";
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    border: 2px solid rgb(252, 212, 247);
+    border: 2px solid rgb(212, 218, 252);
     /* Color del borde */
     border-radius: 5px;
     /* Bordes redondeados */
     color: rgb(238, 243, 238);
     /* Color del texto */
-    background-color: #a482ed;
+    background-color: #9a74ee;
     /* Color de fondo */
     transition: background-color 0.3s, color 0.3s;
     /* Agrega transiciones suaves */
 }
 
 label.filtro{
-    color: #efefef;
+    color: #fffdfd;
     font-family: "roboto";
     font-weight: bold;
     font-size: 25px;
+    
+    
 }
 select#filtroContinente{
     font-size: 20px;
+    font-family: "roboto";
     background-color: rgb(255, 255, 255);
-    color:  #a482ed;;
+    color: #7bb4d4;
+    font-weight: bold;
+    border: none;
+    margin-left: 10px;
 }
