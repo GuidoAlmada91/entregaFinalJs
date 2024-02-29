@@ -9,8 +9,6 @@
 h2 {
     color: rgb(122, 123, 122);
     font-family: "roboto";
-    
-    
 }
 
 h3{
@@ -33,25 +31,22 @@ input#buscador{
     color: #7bb4d4;
     font-family: "Roboto";
     font-weight: bold;
-    font-size: 20px;
-    
+    font-size: 20px;   
 }
 
 input#buscador::placeholder {
-    color: #7bb4d4;
-    
+    color: #7bb4d4;   
 }
 
 .contenedorBuscador{
     display: flex;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 nav{
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center;
+    align-items: center;
     height: 100px;
 }
 
@@ -72,9 +67,7 @@ h1 {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    /* Permite que las tarjetas se envuelvan a la siguiente fila */
     justify-content: space-around;
-    /* Distribuye el espacio alrededor de las tarjetas */
 }
 
 body{
@@ -166,7 +159,7 @@ select#filtroContinente{
 }
 .favorito {
     display: flex;
-    cursor: pointer;  /* Cambia el cursor al pasar sobre el elemento para indicar que es interactivo */
+    cursor: pointer;
     padding: 5px;
     margin: 5px;
     border: none;
@@ -192,6 +185,6 @@ select#filtroContinente{
 
 #favoritos{
     display: flex;
-        align-items: center; /* Alinea los elementos verticalmente en el centro */
-        margin-bottom: 10px; /* Espaciado entre los contenedores de países */
+        align-items: center;
+        margin-bottom: 10px;
     }

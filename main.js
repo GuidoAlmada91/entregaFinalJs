@@ -43,18 +43,10 @@ const mostrarDetalles = (nombre, poblacion, region, capital, languages) => {
 }
 
 const agregarAFavoritos = (pais) => {
-    // Obtener la lista de favoritos del almacenamiento local
     const favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
-
-    // Verificar si el país ya está en la lista de favoritos
     if (!favoritos.some(fav => fav.name.common === pais.name.common)) {
-        // Agregar el país a la lista de favoritos
         favoritos.push(pais);
-
-        // Guardar la lista actualizada en el almacenamiento local
         localStorage.setItem('favoritos', JSON.stringify(favoritos));
-
-        // Actualizar la interfaz de usuario o realizar otras acciones si es necesario
         console.log('País agregado a favoritos:', pais.name.common);
         mostrarFavoritos();
     } else {
@@ -68,7 +60,6 @@ const mostrarFavoritos = () => {
     container.innerHTML = '';
 
     favoritos.forEach(fav => {
-        // Crear un elemento div para el nombre del país favorito
         const favoritoNombreElement = document.createElement('div');
         favoritoNombreElement.className = 'favorito-nombre';
         favoritoNombreElement.textContent = fav.name.common;
@@ -76,7 +67,7 @@ const mostrarFavoritos = () => {
             mostrarDetalles(fav.name.common, fav.population, fav.region, fav.capital, fav.languages);
         });
 
-        // Crear un botón de remover para cada país favorito
+    
         const removerButton = document.createElement('button');
         removerButton.textContent = 'x';
         removerButton.classList.add('botonRemover');
@@ -84,28 +75,24 @@ const mostrarFavoritos = () => {
             removerDeFavoritos(fav.name.common);
         });
 
-        // Crear un elemento div para contener el nombre y el botón
+        
         const favoritoElement = document.createElement('div');
         favoritoElement.className = 'favorito';
         favoritoElement.appendChild(favoritoNombreElement);
         favoritoElement.appendChild(removerButton);
 
-        // Agregar el elemento favorito al contenedor principal
+    
         container.appendChild(favoritoElement);
     });
 };
 
 const removerDeFavoritos = (nombrePais) => {
-    // Obtener la lista de favoritos del almacenamiento local
     let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
 
-    // Filtrar la lista para excluir el país a remover
     favoritos = favoritos.filter(fav => fav.name.common !== nombrePais);
 
-    // Guardar la lista actualizada en el almacenamiento local
     localStorage.setItem('favoritos', JSON.stringify(favoritos));
 
-    // Mostrar la lista de favoritos actualizada
     mostrarFavoritos();
 };
 
@@ -147,7 +134,6 @@ filtroContinente.addEventListener('change', () => {
     cargarApiCountries();
 });
 
-// Mostrar favoritos al cargar la página
 mostrarFavoritos();
 
 cargarApiCountries();
