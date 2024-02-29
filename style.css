@@ -1,3 +1,11 @@
+.titulo{
+    font-size: 50px;
+    font-family: "Roboto";
+    padding: 0%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
 h2 {
     color: rgb(122, 123, 122);
     font-family: "roboto";
@@ -40,13 +48,24 @@ input#buscador::placeholder {
     
 }
 
+nav{
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 100px;
+}
+
+.imagen{
+    height: 50px;
+    width: 50px;
+}
 
 h1 {
-    color: rgb(122, 123, 122);
+    color: rgb(255, 255, 255);
     font-family: "roboto";
     font-weight: bold;
     text-align: center;
-    background-color: #ffffff;
+    
 }
 
 #paises {
@@ -78,6 +97,7 @@ img {
     width: 200px;
     height: 100px;
     margin-bottom: 20px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
 }
 
 button {
@@ -90,15 +110,14 @@ button {
     text-decoration: none;
     cursor: pointer;
     border: 2px solid rgb(212, 218, 252);
-    /* Color del borde */
     border-radius: 5px;
-    /* Bordes redondeados */
     color: rgb(238, 243, 238);
-    /* Color del texto */
     background-color: #9a74ee;
-    /* Color de fondo */
-    transition: background-color 0.3s, color 0.3s;
-    /* Agrega transiciones suaves */
+}
+
+button:hover{
+    color: #ffffff;
+    background-color: #7bb4d4;
 }
 
 label.filtro{
@@ -118,3 +137,61 @@ select#filtroContinente{
     border: none;
     margin-left: 10px;
 }
+
+.favoritos{
+    color: #fafafa;
+    background-color: aqua;
+    display: flex;
+}
+
+.botonRemover{
+    margin-left: 10px;
+    display: inline-block;
+    padding: 2px 7px;
+    font-size: 11px;
+    font-family: "roboto";
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: rgb(243, 238, 238);
+    background-color: #f55252;
+}
+
+.botonRemover:hover{
+    background-color: #fafafa;
+    color: #f55252;
+}
+.favorito {
+    display: flex;
+    cursor: pointer;  /* Cambia el cursor al pasar sobre el elemento para indicar que es interactivo */
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9a74ee;
+}
+
+.favorito:hover {
+    background-color: #2a79b9;
+    color: #ffffff;;
+}
+
+.favorito-nombre{
+    color: #f0f0f0;
+    font-family: "roboto";
+    font-weight: bold;
+    text-align: center;
+}
+
+.favorito-nombre:hover{
+    color: #ffffff;;
+}
+
+#favoritos{
+    display: flex;
+        align-items: center; /* Alinea los elementos verticalmente en el centro */
+        margin-bottom: 10px; /* Espaciado entre los contenedores de países */
+    }

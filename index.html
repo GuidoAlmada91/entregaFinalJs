@@ -13,7 +13,10 @@
 </head>
 
 <body>
-    <h1>Api de Paises</h1>
+    <nav>
+        <img src="./assets/img/mundo.webp" class="imagen" alt="">
+        <h1 class="titulo">Api de Paises</h1>
+    </nav>
     <label class="filtro" for="filtroContinente">Continente: </label>
     <select id="filtroContinente">
         <option value="todos">Todos</option>
@@ -24,9 +27,10 @@
         <option value="Oceania">Oceanía</option>
     </select>
     <div class="contenedorBuscador">
-    <h3>Buscador:</h3>
-    <input type="text" id="buscador" placeholder="Buscar país...">
+        <h3>Buscador:</h3>
+        <input type="text" id="buscador" placeholder="Buscar país...">
     </div>
+    <div id="favoritos"></div>
     <div class="paises" id="paises">
 
     </div>
